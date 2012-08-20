@@ -38,7 +38,7 @@ public class PushService extends Service {
 
 	// the IP address, where your MQTT broker is running.
 	// private static final String MQTT_HOST = "209.124.50.174";
-	private static final String MQTT_HOST = "118.233.100.117";
+	private static final String MQTT_HOST = "202.133.233.212";
 	// private static final String MQTT_HOST = "localhost";
 
 	// the port at which the broker is running.
