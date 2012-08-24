@@ -17,8 +17,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		mDeviceID = Secure.getString(this.getContentResolver(),
-				Secure.ANDROID_ID);
+		//mDeviceID = Secure.getString(this.getContentResolver(), Secure.ANDROID_ID);
+		mDeviceID = "allensu";
 		((TextView) findViewById(R.id.androidId)).setText(mDeviceID);
 
 		Editor editor = getSharedPreferences(PushService.TAG, MODE_PRIVATE)
