@@ -25,7 +25,14 @@ public class MainActivity extends Activity {
 				.edit();
 		editor.putString(PushService.PREF_DEVICE_ID, mDeviceID);
 		editor.commit();
-		PushService.actionStart(getApplicationContext());
+		
+		new Thread(){
+			public void run(){
+				
+				PushService.actionStart(getApplicationContext());
+			}
+		}.start();
+		
 	}
 
 	@Override

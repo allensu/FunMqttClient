@@ -258,13 +258,13 @@ public class PushService extends Service {
 		}
 
 		// Establish an MQTT connection
-		//connect();
-		new Thread(){
-			public void run(){
-				
-				connect();
-			}
-		}.start();
+		connect();
+//		new Thread(){
+//			public void run(){
+//				
+//				connect();
+//			}
+//		}.start();
 
 		// Register a connectivity listener
 		registerReceiver(mConnectivityChanged, new IntentFilter(
