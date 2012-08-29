@@ -31,12 +31,12 @@ public class MainActivity extends Activity {
         		editor.putString(PushService.PREF_DEVICE_ID, mDeviceID);
         		editor.commit();
         		
-            	new Thread(){
-        			public void run(){
+            	//new Thread(){
+        			//public void run(){
         				
         				PushService.actionStart(getApplicationContext());
-        			}
-        		}.start();
+        			//}
+        		//}.start();
             }
         });
 		
